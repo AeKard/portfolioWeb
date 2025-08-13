@@ -1,0 +1,160 @@
+section{
+    margin-bottom: 50px;
+}
+p span{
+    color: rgb(var(--primary-color));
+    font-size: 2.4rem;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+
+.hero-section .title-card{
+    padding: 20px;
+    h1 {
+        background: linear-gradient(to right,rgb(var(--text-color)) ,rgb(var(--primary-color)));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h2{
+        margin-left: 300px;
+    }
+    h3{
+        margin-left: 380px;
+    }
+}
+
+/* Skill showcase*/
+
+.skill-showcase{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+}
+/*about me section*/
+.container-title:nth-last-child(-n + 1){
+    font-family: "Bacasime Antique", serif;
+    font-weight:200;
+}
+
+.container-title{
+    padding: 20px;
+    font-family: "Bacasime Antique", serif;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.description > *{
+    margin-bottom: 48px;
+    margin-right: -54px;
+}
+.description{
+    padding: 20px;
+    margin-right: -40px;
+    z-index: 0;
+}
+.img-self{
+    border-top-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    max-width: 710px;
+    opacity: 45%;
+    z-index: -1;
+    animation: entrance 0.5s ease-in-out;
+}
+.about-me{
+    display: flex;
+    flex-direction: row;
+}
+.my-name{
+    letter-spacing: -8px;
+}
+.btn-work-together{
+    padding:20px 35px;
+    font-size: 2.8rem;
+    font-family: inherit;
+    background-color: transparent;
+    color: rgb(var(--text-color));
+    border: 1px solid rgb(var(--accent-color));
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-work-together:hover{
+    transition: all 0.5s;
+    background-color: rgb(var(--accent-color));
+    color: rgb(var(--background-color));
+}
+/* Work process section*/
+.work-process{
+    padding: 0 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.btn-indicator{
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 100%;
+    border: 3px solid rgb(var(--primary-color));
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3 ease;
+}
+.collapsible {
+    display: flex;
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding:40px 35px;
+    font-size: 2.8rem;
+    font-family: inherit;
+    background-color: transparent;
+    color: rgb(var(--text-color));
+    border: 1px solid rgb(var(--accent-color));
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    /* transition: border-radius 0.2s ease-out; */
+}
+.collapsible.active {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+}
+.content {
+    max-height: 0;
+    padding: 0 20px; 
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out, border-color 0.2s ease-out;
+}
+.content p{
+    font-size: 1.5rem;
+}
+
+.content.open {
+    border-top: 1px solid white;
+    padding: 20px; 
+    border-color: rgb(var(--accent-color));
+}
+/*Animation*/
+.arrow{
+    animation: entryleft 2s ease-out;
+}
+@keyframes entryleft {
+    from{
+        transform: translateX(-10%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+
+/* media siez*/
+
