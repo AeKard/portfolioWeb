@@ -95,7 +95,7 @@ p span{
     overflow: hidden;
 }
 .btn-indicator{
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: bold;
     border-radius: 100%;
     border: 3px solid rgb(var(--primary-color));
@@ -158,3 +158,43 @@ p span{
 
 /* media siez*/
 
+@media screen and (max-width: 800px) {
+    .img-self{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 440px;
+    }
+    .hero-section .title-card{
+        padding: 20px;
+        h1 {
+            background: linear-gradient(to right,rgb(var(--text-color)) ,rgb(var(--primary-color)));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2{
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+        h3{
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    .arrow{
+        width: 250px;
+    }
+    .skill-showcase img{
+        width: 30px;
+    }
+    .description{
+        margin-right: 0px;
+    }
+    .description h1{
+        margin-right: 90px;
+    }
+    .description > *{
+        margin-bottom: 48px;
+        margin-right: 0px;
+    }
+}

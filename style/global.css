@@ -37,6 +37,7 @@ nav input{
 }
 .burger{
     display: none;
+    cursor: pointer;
 }
 main{
     overflow: hidden;
@@ -89,6 +90,7 @@ nav ul li{
     list-style: none;
     margin: 0 30px;
 }
+
 nav ul li:nth-last-child(-n + 1) a{
     padding: 15px 30px;
     border: 1px solid rgb(var(--text-color));
@@ -182,7 +184,7 @@ footer{
         background: rgb(var(--primary-color));
         position: fixed;
         flex-direction: column;
-        width: 50%;
+        width: 35%;
         height: 100%;
         top: 0%;
         left: 100%;
@@ -195,8 +197,12 @@ footer{
     .nav-list li{
         margin-top: 30px;
     }
-    .nav-list li:first-child{
-        margin-top: 100px;
+    nav ul li a{
+        padding: 15px 30px;
+    }
+    nav ul li a:hover{
+        background: rgb(var(--accent-color));
+        transition: all 0.5s ease
     }
     .nav-list li:last-child{
         margin-top: 40px;
@@ -215,7 +221,7 @@ footer{
     .burger span{
         padding: 0.2rem 2rem;
         margin: 0.5rem;
-        background-color: rgb(var(--accent-color));
+        background-color: rgb(var(--text-color));
         display: block;
     }
     .menu-check:checked ~ .nav-list{
@@ -227,16 +233,15 @@ footer{
     }
 }
 @media (min-width: 800px) and (max-width: 1300px) {
+
     html{
-        font-size: 28.25%;
+        font-size: 33.25%;
     }
     #logo-btn{
-        width: 80px;
+        width: 200px;
     }
-}
-@media screen and (max-width: 800px) {
-    html{
-        font-size: 32.25%;
+    .img-self{
+        width: 470px;
     }
     .footer-h1{
         letter-spacing: -5px;
@@ -244,5 +249,16 @@ footer{
     /*footer*/
     .footer-desc div:nth-last-child(-n + 1) a img{
         width: 3.5rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    html{
+        font-size: 28.25%;
+    }
+    .footer-desc div:nth-last-child(-n + 1) a img{
+        width: 20px;
+    }
+    .footer-h1{
+        letter-spacing: -5px;
     }
 }
